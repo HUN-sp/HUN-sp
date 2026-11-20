@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="392" viewBox="0 0 840 392" role="img" aria-label="21 merged pull requests to 9 repositories I don't own">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
+  </defs>
+  <style>
+    text{font-family:'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif;fill:#c9d1d9}
+    .h{font-size:20px;font-weight:700;fill:#e6edf3}
+    .sub{font-size:13px;fill:#8b949e}
+    .num{font-size:34px;font-weight:800;fill:url(#g)}
+    .lbl{font-size:12px;fill:#8b949e;letter-spacing:.06em;text-transform:uppercase}
+    .repo{font-size:14px;font-weight:600}
+    .star{font-size:12px;fill:#8b949e}
+    .cnt{font-size:14px;font-weight:700}
+    .row{opacity:0;animation:fade .5s ease forwards}
+    .bar{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:grow .9s cubic-bezier(.2,.8,.2,1) forwards}
+    .dot{animation:pulse 2s ease-in-out infinite}
+    @keyframes fade{to{opacity:1}}
+    @keyframes grow{to{transform:scaleX(1)}}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+  </style>
+  <rect x="0.5" y="0.5" width="839" height="391" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <text x="32" y="40" class="h">Open-source contributions</text>
+  <circle cx="680" cy="35" r="5" fill="#2ea043" class="dot"/>
+  <text x="692" y="40" class="sub">live · 2026-11-20</text>
+  
+    <g transform="translate(32,96)">
+      <text class="num" y="0">21</text>
+      <text class="lbl" y="24">merged PRs</text>
+    </g>
+  
+    <g transform="translate(232,96)">
+      <text class="num" y="0">9</text>
+      <text class="lbl" y="24">repositories</text>
+    </g>
+  
+    <g transform="translate(432,96)">
+      <text class="num" y="0">2023</text>
+      <text class="lbl" y="24">contributing since</text>
+    </g>
+  
+    <g transform="translate(632,96)">
+      <text class="num" y="0">6</text>
+      <text class="lbl" y="24">in review</text>
+    </g>
+  <line x1="32" x2="808" y1="144" y2="144" stroke="#30363d"/>
+  <text x="32" y="170" class="sub">Merged PRs per repository</text>
+  
+    <g transform="translate(0,196)" style="animation-delay:0.15s" class="row">
+      <text x="32" y="0" class="repo">OSGeo/grass</text>
+      <text x="316" y="0" class="star" text-anchor="end">★ 1.2k</text>
+      <rect x="330" y="-12" width="400" height="14" rx="7" fill="#21262d"/>
+      <rect x="330" y="-12" width="400" height="14" rx="7" fill="url(#g)" class="bar" style="animation-delay:0.2s"/>
+      <text x="744" y="0" class="cnt">5</text>
+    </g>
+    <g transform="translate(0,226)" style="animation-delay:0.25s" class="row">
+      <text x="32" y="0" class="repo">AidTraceHQ/AidTraceLabs</text>
+      <text x="316" y="0" class="star" text-anchor="end">★ 0</text>
+      <rect x="330" y="-12" width="400" height="14" rx="7" fill="#21262d"/>
+      <rect x="330" y="-12" width="320" height="14" rx="7" fill="url(#g)" class="bar" style="animation-delay:0.30000000000000004s"/>
+      <text x="744" y="0" class="cnt">4</text>
+    </g>
+    <g transform="translate(0,256)" style="animation-delay:0.35s" class="row">
+      <text x="32" y="0" class="repo">Altacon-Labs/RevMarket</text>
+      <text x="316" y="0" class="star" text-anchor="end">★ 1</text>
+      <rect x="330" y="-12" width="400" height="14" rx="7" fill="#21262d"/>
+      <rect x="330" y="-12" width="240" height="14" rx="7" fill="url(#g)" class="bar" style="animation-delay:0.4s"/>
+      <text x="744" y="0" class="cnt">3</text>
+    </g>
+    <g transform="translate(0,286)" style="animation-delay:0.45000000000000007s" class="row">
+      <text x="32" y="0" class="repo">Indrajeety993648/javascript_Chess</text>
+      <text x="316" y="0" class="star" text-anchor="end">★ 1</text>
+      <rect x="330" y="-12" width="400" height="14" rx="7" fill="#21262d"/>
+      <rect x="330" y="-12" width="240" height="14" rx="7" fill="url(#g)" class="bar" style="animation-delay:0.5s"/>
+      <text x="744" y="0" class="cnt">3</text>
+    </g>
+    <g transform="translate(0,316)" style="animation-delay:0.55s" class="row">
+      <text x="32" y="0" class="repo">Coronasafe/leaderboard-data.old</text>
+      <text x="316" y="0" class="star" text-anchor="end">★ 5</text>
+      <rect x="330" y="-12" width="400" height="14" rx="7" fill="#21262d"/>
+      <rect x="330" y="-12" width="160" height="14" rx="7" fill="url(#g)" class="bar" style="animation-delay:0.6000000000000001s"/>
+      <text x="744" y="0" class="cnt">2</text>
+    </g>
+    <g transform="translate(0,346)" style="animation-delay:0.65s" class="row">
+      <text x="32" y="0" class="repo">storacha/guppy</text>
+      <text x="316" y="0" class="star" text-anchor="end">★ 16</text>
+      <rect x="330" y="-12" width="400" height="14" rx="7" fill="#21262d"/>
+      <rect x="330" y="-12" width="80" height="14" rx="7" fill="url(#g)" class="bar" style="animation-delay:0.7s"/>
+      <text x="744" y="0" class="cnt">1</text>
+    </g>
+</svg>
