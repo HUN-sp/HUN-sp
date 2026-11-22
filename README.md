@@ -63,13 +63,15 @@ Every pull request I've had merged into a repository **I don't own**. This secti
 | <img src="https://avatars.githubusercontent.com/u/190044620?v=4&s=40" width="16" height="16" align="center"> [akkuea/akkuea](https://github.com/akkuea/akkuea) | 145 | **1** | Nov 2026 |
 | <img src="https://avatars.githubusercontent.com/u/162732805?v=4&s=40" width="16" height="16" align="center"> [storacha/guppy](https://github.com/storacha/guppy) | 16 | **1** | Dec 2025 |
 | <img src="https://avatars.githubusercontent.com/u/36362019?u=2ef3e2b0ff93a1004ae64bbb5a452a2684a2f48b&v=4&s=40" width="16" height="16" align="center"> [yasharya2901/Python-Price-Scrapper](https://github.com/yasharya2901/Python-Price-Scrapper) | 5 | **1** | Dec 2023 |
+| <img src="https://avatars.githubusercontent.com/u/287772980?v=4&s=40" width="16" height="16" align="center"> [mind-vault-1/mindvault](https://github.com/mind-vault-1/mindvault) | 3 | **1** | Nov 2026 |
 | <img src="https://avatars.githubusercontent.com/u/301787964?v=4&s=40" width="16" height="16" align="center"> [SkyyNineCrew/Quoin](https://github.com/SkyyNineCrew/Quoin) | 0 | **1** | Nov 2026 |
 | <img src="https://avatars.githubusercontent.com/u/338053300?v=4&s=40" width="16" height="16" align="center"> [llmops-docqa-team/finChat](https://github.com/llmops-docqa-team/finChat) | 0 | **1** | Oct 2026 |
 | <img src="https://avatars.githubusercontent.com/u/63041806?u=e60128cb5af5a537f1e2fe31c2fd76a3b18606bb&v=4&s=40" width="16" height="16" align="center"> [maybeabhinav/bookit](https://github.com/maybeabhinav/bookit) | 0 | **1** | May 2024 |
 
 <details>
-<summary><b>All 23 merged pull requests</b> (newest first)</summary>
+<summary><b>All 24 merged pull requests</b> (newest first)</summary>
 
+- `2026-11-22` **mind-vault-1/mindvault** · [#1311](https://github.com/mind-vault-1/mindvault/pull/1311) fix(contract): make set_tags an atomic single-pass tag replacement (#1260)
 - `2026-11-21` **SkyyNineCrew/Quoin** · [#177](https://github.com/SkyyNineCrew/Quoin/pull/177) fix(contracts): initialize all storage variables in academy-rewards
 - `2026-11-20` **akkuea/akkuea** · [#1404](https://github.com/akkuea/akkuea/pull/1404) feat(shared): validate pilot environment variables in the shared env schema
 - `2026-11-20` **Altacon-Labs/RevMarket** · [#52](https://github.com/Altacon-Labs/RevMarket/pull/52) fix(drafts): prevent stale draft edits from overwriting newer revisions
@@ -99,7 +101,7 @@ Every pull request I've had merged into a repository **I don't own**. This secti
 <details>
 <summary><b>5 pull requests currently in review</b></summary>
 
-- **mind-vault-1/mindvault** · [#1311](https://github.com/mind-vault-1/mindvault/pull/1311) fix(contract): make set_tags an atomic single-pass tag replacement (#1260)
+- **wraith-protocol/www** · [#235](https://github.com/wraith-protocol/www/pull/235) test(seo): validate generated OG images across routes and locales
 - **KnightKnight27/Scaler-HFT-2027** · [#108](https://github.com/KnightKnight27/Scaler-HFT-2027/pull/108) Market_data_publisher_10174
 - **priyasirohi09/joplin** · [#269](https://github.com/priyasirohi09/joplin/pull/269) Updated empty Trash Functionality
 - **priyasirohi09/joplin** · [#79](https://github.com/priyasirohi09/joplin/pull/79) Pencil icon
