@@ -39,7 +39,7 @@
     </g>
   
     <g transform="translate(632,96)">
-      <text class="num" y="0">4</text>
+      <text class="num" y="0">6</text>
       <text class="lbl" y="24">in review</text>
     </g>
   <line x1="32" x2="808" y1="144" y2="144" stroke="#30363d"/>
@@ -82,7 +82,7 @@
     </g>
     <g transform="translate(0,346)" style="animation-delay:0.65s" class="row">
       <text x="32" y="0" class="repo">akkuea/akkuea</text>
-      <text x="316" y="0" class="star" text-anchor="end">★ 144</text>
+      <text x="316" y="0" class="star" text-anchor="end">★ 145</text>
       <rect x="330" y="-12" width="400" height="14" rx="7" fill="#21262d"/>
       <rect x="330" y="-12" width="80" height="14" rx="7" fill="url(#g)" class="bar" style="animation-delay:0.7s"/>
       <text x="744" y="0" class="cnt">1</text>

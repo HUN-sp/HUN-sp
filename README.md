@@ -60,7 +60,7 @@ Every pull request I've had merged into a repository **I don't own**. This secti
 | <img src="https://avatars.githubusercontent.com/u/205609005?v=4&s=40" width="16" height="16" align="center"> [Altacon-Labs/RevMarket](https://github.com/Altacon-Labs/RevMarket) | 1 | **3** | Nov 2026 |
 | <img src="https://avatars.githubusercontent.com/u/145670162?u=eb54c86731b38ab9d3ba2f72201a4e0fe9b8c6b9&v=4&s=40" width="16" height="16" align="center"> [Indrajeety993648/javascript_Chess](https://github.com/Indrajeety993648/javascript_Chess) | 1 | **3** | Sep 2024 |
 | <img src="https://avatars.githubusercontent.com/u/179235403?v=4&s=40" width="16" height="16" align="center"> [Coronasafe/leaderboard-data.old](https://github.com/Coronasafe/leaderboard-data.old) | 5 | **2** | Aug 2024 |
-| <img src="https://avatars.githubusercontent.com/u/190044620?v=4&s=40" width="16" height="16" align="center"> [akkuea/akkuea](https://github.com/akkuea/akkuea) | 144 | **1** | Nov 2026 |
+| <img src="https://avatars.githubusercontent.com/u/190044620?v=4&s=40" width="16" height="16" align="center"> [akkuea/akkuea](https://github.com/akkuea/akkuea) | 145 | **1** | Nov 2026 |
 | <img src="https://avatars.githubusercontent.com/u/162732805?v=4&s=40" width="16" height="16" align="center"> [storacha/guppy](https://github.com/storacha/guppy) | 16 | **1** | Dec 2025 |
 | <img src="https://avatars.githubusercontent.com/u/275600000?v=4&s=40" width="16" height="16" align="center"> [wraith-protocol/www](https://github.com/wraith-protocol/www) | 5 | **1** | Nov 2026 |
 | <img src="https://avatars.githubusercontent.com/u/36362019?u=2ef3e2b0ff93a1004ae64bbb5a452a2684a2f48b&v=4&s=40" width="16" height="16" align="center"> [yasharya2901/Python-Price-Scrapper](https://github.com/yasharya2901/Python-Price-Scrapper) | 5 | **1** | Dec 2023 |
@@ -101,8 +101,10 @@ Every pull request I've had merged into a repository **I don't own**. This secti
 </details>
 
 <details>
-<summary><b>4 pull requests currently in review</b></summary>
+<summary><b>6 pull requests currently in review</b></summary>
 
+- **dotandev/hintents** · [#2271](https://github.com/dotandev/hintents/pull/2271) chore: remove orphaned Rust sources under src/
+- **dotandev/hintents** · [#2270](https://github.com/dotandev/hintents/pull/2270) ci(dependabot): group minor/patch updates for erst_extension and docs/showcase
 - **KnightKnight27/Scaler-HFT-2027** · [#108](https://github.com/KnightKnight27/Scaler-HFT-2027/pull/108) Market_data_publisher_10174
 - **priyasirohi09/joplin** · [#269](https://github.com/priyasirohi09/joplin/pull/269) Updated empty Trash Functionality
 - **priyasirohi09/joplin** · [#79](https://github.com/priyasirohi09/joplin/pull/79) Pencil icon
