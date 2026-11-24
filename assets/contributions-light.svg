@@ -39,7 +39,7 @@
     </g>
   
     <g transform="translate(632,96)">
-      <text class="num" y="0">6</text>
+      <text class="num" y="0">7</text>
       <text class="lbl" y="24">in review</text>
     </g>
   <line x1="32" x2="808" y1="144" y2="144" stroke="#d0d7de"/>
@@ -54,14 +54,14 @@
     </g>
     <g transform="translate(0,226)" style="animation-delay:0.25s" class="row">
       <text x="32" y="0" class="repo">AidTraceHQ/AidTraceLabs</text>
-      <text x="316" y="0" class="star" text-anchor="end">★ 0</text>
+      <text x="316" y="0" class="star" text-anchor="end">★ 1</text>
       <rect x="330" y="-12" width="400" height="14" rx="7" fill="#eaeef2"/>
       <rect x="330" y="-12" width="320" height="14" rx="7" fill="url(#g)" class="bar" style="animation-delay:0.30000000000000004s"/>
       <text x="744" y="0" class="cnt">4</text>
     </g>
     <g transform="translate(0,256)" style="animation-delay:0.35s" class="row">
       <text x="32" y="0" class="repo">Altacon-Labs/RevMarket</text>
-      <text x="316" y="0" class="star" text-anchor="end">★ 1</text>
+      <text x="316" y="0" class="star" text-anchor="end">★ 2</text>
       <rect x="330" y="-12" width="400" height="14" rx="7" fill="#eaeef2"/>
       <rect x="330" y="-12" width="240" height="14" rx="7" fill="url(#g)" class="bar" style="animation-delay:0.4s"/>
       <text x="744" y="0" class="cnt">3</text>
@@ -82,7 +82,7 @@
     </g>
     <g transform="translate(0,346)" style="animation-delay:0.65s" class="row">
       <text x="32" y="0" class="repo">akkuea/akkuea</text>
-      <text x="316" y="0" class="star" text-anchor="end">★ 145</text>
+      <text x="316" y="0" class="star" text-anchor="end">★ 146</text>
       <rect x="330" y="-12" width="400" height="14" rx="7" fill="#eaeef2"/>
       <rect x="330" y="-12" width="80" height="14" rx="7" fill="url(#g)" class="bar" style="animation-delay:0.7s"/>
       <text x="744" y="0" class="cnt">1</text>
