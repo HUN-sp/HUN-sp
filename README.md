@@ -112,7 +112,7 @@ Every pull request I've had merged into a repository **I don't own**. This secti
 
 </details>
 
-<sub>Auto-generated from the GitHub API by a scheduled workflow · counts only PRs to repositories I don't own · last updated 2026-11-23</sub>
+<sub>Auto-generated from the GitHub API by a scheduled workflow · counts only PRs to repositories I don't own · last updated 2026-11-24</sub>
 <!-- CONTRIBUTIONS:END -->
 
 ## 🚀 Featured projects
