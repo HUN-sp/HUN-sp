@@ -6,10 +6,23 @@
 </a>
 
 <p align="center">
-  <a href="https://main.d1w2pd8rw6h4an.amplifyapp.com"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-Visit%20site-7c3aed?style=for-the-badge&logo=amazonaws&logoColor=white"></a>
+  <a href="https://main.d1w2pd8rw6h4an.amplifyapp.com"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-View%20live%20site%20%E2%86%92-7c3aed?style=for-the-badge&logo=amazonaws&logoColor=white"></a>
   <a href="https://main.d1w2pd8rw6h4an.amplifyapp.com/Vinay_Kumar_Chopra_Resume.pdf"><img alt="Resume" src="https://img.shields.io/badge/Resume-PDF-2563eb?style=for-the-badge&logo=readdotcv&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/vinay-kumar-chopra-307976286/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="https://leetcode.com/u/Vinay_Chopra-2003/"><img alt="LeetCode" src="https://img.shields.io/badge/LeetCode-Profile-f89f1b?style=for-the-badge&logo=leetcode&logoColor=white"></a>
+</p>
+
+## 🌐 Portfolio
+
+<p align="center">
+  <a href="https://main.d1w2pd8rw6h4an.amplifyapp.com">
+    <img src="assets/portfolio-preview.png" alt="Preview of Vinay Kumar Chopra's portfolio website" width="92%">
+  </a>
+</p>
+
+<p align="center">
+  <b>See the work behind the claims.</b> Eval numbers, failures included, a live demo you can talk to, and the GRASS GIS benchmark.<br>
+  <a href="https://main.d1w2pd8rw6h4an.amplifyapp.com"><b>Open the live portfolio →</b></a> &nbsp;·&nbsp; <a href="https://main.d1w2pd8rw6h4an.amplifyapp.com/Vinay_Kumar_Chopra_Resume.pdf">Resume (PDF)</a>
 </p>
 
 ## 👋 About me
@@ -17,7 +30,7 @@
 I'm a Computer Science student at **BITS Pilani** (2023–present) who builds RAG systems, agents and the evals that check them. I try to publish what didn't work next to what did, so the claims below link to where you can verify them.
 
 - 🧪 **Evaluation-first:** my projects ship with eval write-ups, including the failures
-- 🌍 **Open source:** 5 merged C/Python PRs in [GRASS GIS](https://github.com/OSGeo/grass) plus work across other projects ([live list below](#-open-source-live))
+- 🌍 **Open source:** 5 merged C/Python PRs in [GRASS GIS](https://github.com/OSGeo/grass) plus work across other projects ([live list below](#-contributions-live))
 - 🏆 **Finalist:** Meta PyTorch × OpenEnv Hackathon, Grand Finale
 - 🏏 Off the keyboard: cricket and working through maths problems
 
@@ -43,9 +56,9 @@ My headline result: parallelizing `r.resamp.stats` with OpenMP. On a 50M-cell ra
 | [#7005](https://github.com/OSGeo/grass/pull/7005) `r.surf.fractal` | Profiled with `gprof`; replaced a manual init loop with `G_zero()` |
 | [#7097](https://github.com/OSGeo/grass/pull/7097) `lib` | Replaced unsafe `gets()` with `fgets()` and fixed pointer-type warnings in test programs |
 
-## 📡 Open source, live
+## 📡 Contributions, live
 
-Every pull request I've had merged into a repository **I don't own**. This section updates itself from the GitHub API on a schedule.
+My GitHub activity and every pull request I've had merged into a repository **I don't own**. This section updates itself from the GitHub API on a schedule.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/contributions-dark.svg">
@@ -53,6 +66,8 @@ Every pull request I've had merged into a repository **I don't own**. This secti
 </picture>
 
 <!-- CONTRIBUTIONS:START -->
+**662 contributions on GitHub** (434 commits · 47 pull requests · 16 issues) since 2023, including **25 pull requests merged into 13 projects I don't own**.
+
 | Repository | ⭐ Stars | Merged PRs | Latest merge |
 |:--|--:|--:|:--|
 | <img src="https://avatars.githubusercontent.com/u/1058467?v=4&s=40" width="16" height="16" align="center"> [OSGeo/grass](https://github.com/OSGeo/grass) | 1.2k | **5** | Aug 2026 |
@@ -60,7 +75,7 @@ Every pull request I've had merged into a repository **I don't own**. This secti
 | <img src="https://avatars.githubusercontent.com/u/205609005?v=4&s=40" width="16" height="16" align="center"> [Altacon-Labs/RevMarket](https://github.com/Altacon-Labs/RevMarket) | 2 | **3** | Nov 2026 |
 | <img src="https://avatars.githubusercontent.com/u/145670162?u=eb54c86731b38ab9d3ba2f72201a4e0fe9b8c6b9&v=4&s=40" width="16" height="16" align="center"> [Indrajeety993648/javascript_Chess](https://github.com/Indrajeety993648/javascript_Chess) | 1 | **3** | Sep 2024 |
 | <img src="https://avatars.githubusercontent.com/u/179235403?v=4&s=40" width="16" height="16" align="center"> [Coronasafe/leaderboard-data.old](https://github.com/Coronasafe/leaderboard-data.old) | 5 | **2** | Aug 2024 |
-| <img src="https://avatars.githubusercontent.com/u/190044620?v=4&s=40" width="16" height="16" align="center"> [akkuea/akkuea](https://github.com/akkuea/akkuea) | 146 | **1** | Nov 2026 |
+| <img src="https://avatars.githubusercontent.com/u/190044620?v=4&s=40" width="16" height="16" align="center"> [akkuea/akkuea](https://github.com/akkuea/akkuea) | 145 | **1** | Nov 2026 |
 | <img src="https://avatars.githubusercontent.com/u/162732805?v=4&s=40" width="16" height="16" align="center"> [storacha/guppy](https://github.com/storacha/guppy) | 16 | **1** | Dec 2025 |
 | <img src="https://avatars.githubusercontent.com/u/275600000?v=4&s=40" width="16" height="16" align="center"> [wraith-protocol/www](https://github.com/wraith-protocol/www) | 5 | **1** | Nov 2026 |
 | <img src="https://avatars.githubusercontent.com/u/36362019?u=2ef3e2b0ff93a1004ae64bbb5a452a2684a2f48b&v=4&s=40" width="16" height="16" align="center"> [yasharya2901/Python-Price-Scrapper](https://github.com/yasharya2901/Python-Price-Scrapper) | 5 | **1** | Dec 2023 |
@@ -113,7 +128,7 @@ Every pull request I've had merged into a repository **I don't own**. This secti
 
 </details>
 
-<sub>Auto-generated from the GitHub API by a scheduled workflow · counts only PRs to repositories I don't own · last updated 2026-11-24</sub>
+<sub>Auto-generated from the GitHub API by a scheduled workflow · totals cover all years since joining; merged-PR counts cover only repositories I don't own · last updated 2026-11-25</sub>
 <!-- CONTRIBUTIONS:END -->
 
 ## 🚀 Featured projects
@@ -182,13 +197,6 @@ The thresholds are hand-chosen and unvalidated, so the ranking is a starting poi
 </p>
 
 **AI / evaluation:** RAG · hybrid retrieval (BM25 + dense) · BGE & Cohere embeddings · reranking · OCR · retrieval testing · A/B comparison · error analysis · CrewAI · LangGraph · Langfuse
-
-## 🐍 Contribution activity
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg">
-  <img alt="Contribution graph animation" src="assets/snake-light.svg" width="100%">
-</picture>
 
 ---
 

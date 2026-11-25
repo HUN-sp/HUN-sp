@@ -35,8 +35,50 @@ async function search(q) {
   return out;
 }
 
+// All-time totals from the contribution calendar (one request per calendar year; the API caps a range at 1 year).
+// Falls back to null if the token cannot read them, so the rest of the page still updates.
+async function totals() {
+  const gql = async (query, variables) => {
+    const res = await fetch('https://api.github.com/graphql', {
+      method: 'POST',
+      headers: {Authorization: `bearer ${TOKEN}`, 'Content-Type': 'application/json', 'User-Agent': 'profile-readme'},
+      body: JSON.stringify({query, variables}),
+    });
+    const json = await res.json();
+    if (!res.ok || json.errors) throw new Error(JSON.stringify(json.errors || json));
+    return json.data;
+  };
+  try {
+    const {user} = await gql('query($u:String!){user(login:$u){createdAt}}', {u: USER});
+    const first = new Date(user.createdAt).getUTCFullYear();
+    const now = new Date();
+    const sum = {since: first, total: 0, commits: 0, prs: 0, issues: 0, reviews: 0};
+    for (let y = first; y <= now.getUTCFullYear(); y++) {
+      const from = new Date(Date.UTC(y, 0, 1)).toISOString();
+      const to = (y === now.getUTCFullYear() ? now : new Date(Date.UTC(y, 11, 31, 23, 59, 59))).toISOString();
+      const d = await gql(
+        `query($u:String!,$from:DateTime!,$to:DateTime!){user(login:$u){contributionsCollection(from:$from,to:$to){
+          contributionCalendar{totalContributions} totalCommitContributions totalPullRequestContributions
+          totalIssueContributions totalPullRequestReviewContributions}}}`,
+        {u: USER, from, to});
+      const c = d.user.contributionsCollection;
+      sum.total += c.contributionCalendar.totalContributions;
+      sum.commits += c.totalCommitContributions;
+      sum.prs += c.totalPullRequestContributions;
+      sum.issues += c.totalIssueContributions;
+      sum.reviews += c.totalPullRequestReviewContributions;
+    }
+    return sum;
+  } catch (err) {
+    console.warn('Could not read contribution totals:', err.message);
+    return null;
+  }
+}
+
 const merged = await search(`author:${USER} is:pr is:merged -user:${USER}`);
 const open = await search(`author:${USER} is:pr is:open -user:${USER} archived:false`);
+const all = await totals();
+const fmt = n => n.toLocaleString('en-US');
 merged.sort((a, b) => b.mergedAt.localeCompare(a.mergedAt));
 open.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
 
@@ -58,6 +100,10 @@ const month = iso => new Date(iso).toLocaleDateString('en-US', {month: 'short', 
 
 // ---------- README section ----------
 const lines = [];
+if (all) {
+  lines.push(`**${fmt(all.total)} contributions on GitHub** (${fmt(all.commits)} commits · ${fmt(all.prs)} pull requests · ${fmt(all.issues)} issues) since ${all.since}, including **${merged.length} pull requests merged into ${repoList.length} projects I don't own**.`);
+  lines.push('');
+}
 lines.push(`| Repository | ⭐ Stars | Merged PRs | Latest merge |`);
 lines.push(`|:--|--:|--:|:--|`);
 for (const r of repoList) {
@@ -98,6 +144,12 @@ const THEMES = {
   dark: {bg: '#0d1117', border: '#30363d', title: '#e6edf3', text: '#c9d1d9', muted: '#8b949e', track: '#21262d', a: '#7c3aed', b: '#06b6d4'},
   light: {bg: '#ffffff', border: '#d0d7de', title: '#1f2328', text: '#24292f', muted: '#57606a', track: '#eaeef2', a: '#7c3aed', b: '#0891b2'},
 };
+const stats = [
+  ...(all ? [[fmt(all.total), 'contributions'], [fmt(all.commits), 'commits'], [fmt(all.prs), 'pull requests']] : []),
+  [merged.length, 'merged in OSS'],
+  [repoList.length, 'OSS repositories'],
+  ...(all ? [] : [[since, 'contributing since'], [open.length, 'in review']]),
+];
 function card(t) {
   const top = repoList.slice(0, 6);
   const max = Math.max(1, ...top.map(r => r.prs.length));
@@ -120,7 +172,7 @@ function card(t) {
       <text x="${barX + barW + 14}" y="0" class="cnt">${r.prs.length}</text>
     </g>`;
   }).join('');
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(`${merged.length} merged pull requests to ${repoList.length} repositories I don't own`)}">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(`${all ? fmt(all.total) + ' contributions; ' : ''}${merged.length} merged pull requests to ${repoList.length} repositories I don't own`)}">
   <defs>
     <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="${t.a}"/><stop offset="1" stop-color="${t.b}"/></linearGradient>
   </defs>
@@ -128,8 +180,8 @@ function card(t) {
     text{font-family:'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif;fill:${t.text}}
     .h{font-size:20px;font-weight:700;fill:${t.title}}
     .sub{font-size:13px;fill:${t.muted}}
-    .num{font-size:34px;font-weight:800;fill:url(#g)}
-    .lbl{font-size:12px;fill:${t.muted};letter-spacing:.06em;text-transform:uppercase}
+    .num{font-size:32px;font-weight:800;fill:url(#g)}
+    .lbl{font-size:11px;fill:${t.muted};letter-spacing:.05em;text-transform:uppercase}
     .repo{font-size:14px;font-weight:600}
     .star{font-size:12px;fill:${t.muted}}
     .cnt{font-size:14px;font-weight:700}
@@ -141,15 +193,12 @@ function card(t) {
     @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
   </style>
   <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="14" fill="${t.bg}" stroke="${t.border}"/>
-  <text x="32" y="40" class="h">Open-source contributions</text>
+  <text x="32" y="40" class="h">GitHub contributions</text>
   <circle cx="${W - 160}" cy="35" r="5" fill="#2ea043" class="dot"/>
   <text x="${W - 148}" y="40" class="sub">live · ${esc(today)}</text>
-  ${stat(32, merged.length, 'merged PRs')}
-  ${stat(232, repoList.length, 'repositories')}
-  ${stat(432, since, 'contributing since')}
-  ${stat(632, open.length, 'in review')}
+  ${stats.map((st, i) => stat(32 + i * 160, st[0], st[1])).join('')}
   <line x1="32" x2="${W - 32}" y1="144" y2="144" stroke="${t.border}"/>
-  <text x="32" y="170" class="sub">Merged PRs per repository</text>
+  <text x="32" y="170" class="sub">Merged PRs per open-source repository</text>
   ${rows}
 </svg>
 `;
@@ -157,4 +206,4 @@ function card(t) {
 await mkdir('assets', {recursive: true});
 for (const [name, theme] of Object.entries(THEMES)) await writeFile(`assets/contributions-${name}.svg`, card(theme));
 
-console.log(`merged=${merged.length} repos=${repoList.length} since=${since} open=${open.length}`);
+console.log(`total=${all ? all.total : 'n/a'} merged=${merged.length} repos=${repoList.length} since=${since} open=${open.length}`);
