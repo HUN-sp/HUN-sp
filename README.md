@@ -66,7 +66,7 @@ My GitHub activity and every pull request I've had merged into a repository **I 
 </picture>
 
 <!-- CONTRIBUTIONS:START -->
-**662 contributions on GitHub** (434 commits · 47 pull requests · 16 issues) since 2023, including **25 pull requests merged into 13 projects I don't own**.
+**663 contributions on GitHub** (435 commits · 47 pull requests · 16 issues) since 2023, including **25 pull requests merged into 13 projects I don't own**.
 
 | Repository | ⭐ Stars | Merged PRs | Latest merge |
 |:--|--:|--:|:--|
@@ -128,7 +128,7 @@ My GitHub activity and every pull request I've had merged into a repository **I 
 
 </details>
 
-<sub>Auto-generated from the GitHub API by a scheduled workflow · totals cover all years since joining; merged-PR counts cover only repositories I don't own · last updated 2026-11-25</sub>
+<sub>Auto-generated from the GitHub API by a scheduled workflow · counts only PRs to repositories I don't own · last updated 2026-11-25</sub>
 <!-- CONTRIBUTIONS:END -->
 
 ## 🚀 Featured projects
