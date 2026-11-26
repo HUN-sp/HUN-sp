@@ -66,7 +66,7 @@ My GitHub activity and every pull request I've had merged into a repository **I 
 </picture>
 
 <!-- CONTRIBUTIONS:START -->
-**663 contributions on GitHub** (435 commits · 47 pull requests · 16 issues) since 2023, including **25 pull requests merged into 13 projects I don't own**.
+**663 contributions on GitHub** (435 commits · 47 pull requests · 16 issues) since 2023, including **26 pull requests merged into 14 projects I don't own**.
 
 | Repository | ⭐ Stars | Merged PRs | Latest merge |
 |:--|--:|--:|:--|
@@ -77,6 +77,7 @@ My GitHub activity and every pull request I've had merged into a repository **I 
 | <img src="https://avatars.githubusercontent.com/u/179235403?v=4&s=40" width="16" height="16" align="center"> [Coronasafe/leaderboard-data.old](https://github.com/Coronasafe/leaderboard-data.old) | 5 | **2** | Aug 2024 |
 | <img src="https://avatars.githubusercontent.com/u/190044620?v=4&s=40" width="16" height="16" align="center"> [akkuea/akkuea](https://github.com/akkuea/akkuea) | 145 | **1** | Nov 2026 |
 | <img src="https://avatars.githubusercontent.com/u/162732805?v=4&s=40" width="16" height="16" align="center"> [storacha/guppy](https://github.com/storacha/guppy) | 16 | **1** | Dec 2025 |
+| <img src="https://avatars.githubusercontent.com/u/357489729?v=4&s=40" width="16" height="16" align="center"> [gloam-labs/wraith](https://github.com/gloam-labs/wraith) | 7 | **1** | Nov 2026 |
 | <img src="https://avatars.githubusercontent.com/u/275600000?v=4&s=40" width="16" height="16" align="center"> [wraith-protocol/www](https://github.com/wraith-protocol/www) | 5 | **1** | Nov 2026 |
 | <img src="https://avatars.githubusercontent.com/u/36362019?u=2ef3e2b0ff93a1004ae64bbb5a452a2684a2f48b&v=4&s=40" width="16" height="16" align="center"> [yasharya2901/Python-Price-Scrapper](https://github.com/yasharya2901/Python-Price-Scrapper) | 5 | **1** | Dec 2023 |
 | <img src="https://avatars.githubusercontent.com/u/287772980?v=4&s=40" width="16" height="16" align="center"> [mind-vault-1/mindvault](https://github.com/mind-vault-1/mindvault) | 3 | **1** | Nov 2026 |
@@ -85,8 +86,9 @@ My GitHub activity and every pull request I've had merged into a repository **I 
 | <img src="https://avatars.githubusercontent.com/u/63041806?u=e60128cb5af5a537f1e2fe31c2fd76a3b18606bb&v=4&s=40" width="16" height="16" align="center"> [maybeabhinav/bookit](https://github.com/maybeabhinav/bookit) | 0 | **1** | May 2024 |
 
 <details>
-<summary><b>All 25 merged pull requests</b> (newest first)</summary>
+<summary><b>All 26 merged pull requests</b> (newest first)</summary>
 
+- `2026-11-26` **gloam-labs/wraith** · [#488](https://github.com/gloam-labs/wraith/pull/488) fix(events): count dropped subscription events and test the async iterators (#453)
 - `2026-11-23` **wraith-protocol/www** · [#235](https://github.com/wraith-protocol/www/pull/235) test(seo): validate generated OG images across routes and locales
 - `2026-11-22` **mind-vault-1/mindvault** · [#1311](https://github.com/mind-vault-1/mindvault/pull/1311) fix(contract): make set_tags an atomic single-pass tag replacement (#1260)
 - `2026-11-21` **SkyyNineCrew/Quoin** · [#177](https://github.com/SkyyNineCrew/Quoin/pull/177) fix(contracts): initialize all storage variables in academy-rewards
@@ -116,9 +118,8 @@ My GitHub activity and every pull request I've had merged into a repository **I 
 </details>
 
 <details>
-<summary><b>7 pull requests currently in review</b></summary>
+<summary><b>6 pull requests currently in review</b></summary>
 
-- **gloam-labs/wraith** · [#488](https://github.com/gloam-labs/wraith/pull/488) fix(events): count dropped subscription events and test the async iterators (#453)
 - **dotandev/hintents** · [#2271](https://github.com/dotandev/hintents/pull/2271) chore: remove orphaned Rust sources under src/
 - **dotandev/hintents** · [#2270](https://github.com/dotandev/hintents/pull/2270) ci(dependabot): group minor/patch updates for erst_extension and docs/showcase
 - **KnightKnight27/Scaler-HFT-2027** · [#108](https://github.com/KnightKnight27/Scaler-HFT-2027/pull/108) Market_data_publisher_10174
