@@ -21,7 +21,7 @@
   <rect x="0.5" y="0.5" width="839" height="391" rx="14" fill="#0d1117" stroke="#30363d"/>
   <text x="32" y="40" class="h">GitHub contributions</text>
   <circle cx="680" cy="35" r="5" fill="#2ea043" class="dot"/>
-  <text x="692" y="40" class="sub">live · 2026-11-27</text>
+  <text x="692" y="40" class="sub">live · 2026-11-28</text>
   
     <g transform="translate(32,96)">
       <text class="num" y="0">663</text>
